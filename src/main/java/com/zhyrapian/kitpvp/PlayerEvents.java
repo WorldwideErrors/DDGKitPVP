@@ -49,7 +49,6 @@ public class PlayerEvents implements Listener {
             //Try to load player data
             playerInfo = PlayerManager.getPlayerInfo(player);
             Utils.consoleSuccess(player.getName() + "'s data was loaded");
-            player.sendMessage(Utils.textColor("&c&l") + "[DDG] " + Utils.textColor("&f") + playerInfo.get(0) + " & " + playerInfo.get(1) + " & " + playerInfo.get(2) + " & " + playerInfo.get(3).toString());
             getScoreboard(player);
         }catch (Exception exception){
             //The player is new, store him into the database.
@@ -74,9 +73,17 @@ public class PlayerEvents implements Listener {
             //Spawn was not set
             Utils.consoleError("Lobby was not set!");
             Utils.consoleError("Use /spawn set lobby to set a lobby.");
+            player.sendMessage(Utils.commandPrefix(spawnPrefix) + "Geen lobby beschikbaar");
         }
         //Give player GUI for kit selection
-        Bukkit.getScheduler().runTaskLater(plugin, () -> getGUI(player), 4);
+        if (kitCollection.countDocuments() > 0){
+            Bukkit.getScheduler().runTaskLater(plugin, () -> getGUI(player), 4);
+        }else {
+            Utils.consoleError("There were 0 kits available!");
+            Utils.consoleError("Use /kit save [name]] to save a kit.");
+            player.sendMessage(Utils.commandPrefix(kitPrefix) + "Geen kits beschikbaar");
+        }
+
     }
 
     @EventHandler

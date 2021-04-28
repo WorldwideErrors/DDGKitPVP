@@ -34,7 +34,7 @@ public class KitsManager implements Listener {
 
         kitGUI = Bukkit.createInventory(null, 27, "GUI");
 
-        for(int slot = 0; slot < kitCollection.countDocuments(); slot++){
+        for (int slot = 0; slot < kitCollection.countDocuments(); slot++) {
             Document kitsDoc = kitCollection.find(new Document("slot", slot)).first();
 
             //Set variables
@@ -50,7 +50,7 @@ public class KitsManager implements Listener {
             //Set icon meta
             ItemMeta iconMeta = stack.getItemMeta();
             iconMeta.setDisplayName(Utils.textColor(titleColor) + name);
-            iconMeta.setLore(Collections.singletonList(Utils.textColor(subColor +"&o") + description));
+            iconMeta.setLore(Collections.singletonList(Utils.textColor(subColor + "&o") + description));
             stack.setItemMeta(iconMeta);
 
             kitGUI.setItem(slot, new ItemStack(stack));
