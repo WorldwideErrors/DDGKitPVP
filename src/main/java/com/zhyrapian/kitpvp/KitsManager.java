@@ -81,7 +81,6 @@ public class KitsManager implements Listener {
             player.sendMessage(Utils.commandPrefix(kitPrefix) + "Kit kon niet opgeslagen worden!");
         }
 
-        Bukkit.getConsoleSender().sendMessage("DIT IS DAT ENE " + Arrays.toString(inventory.getContents()));
         player.sendMessage(Utils.commandPrefix(kitPrefix) +  "Je hebt de kit " + Utils.textColor(color) + kitname + Utils.textColor("&7") + " geselecteerd.");
     }
 

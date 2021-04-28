@@ -64,8 +64,8 @@ public class Utils {
         sender.sendMessage(textColor("&6&l") + "[KIT] " + textColor("&f")+ "Do you mean:");
         sender.sendMessage(textColor("&e") + "/kit menu"
                 + textColor("&f") + " => " + textColor("&7") + "Hiermee haal je het kit menu op");
-        sender.sendMessage(textColor("&e") + "/kit save [name]"
-                + textColor("&f") + " => " + textColor("&7") + "Hiermee kan je een kit opslaan");
+        sender.sendMessage(textColor("&e") + "/kit create [name]"
+                + textColor("&f") + " => " + textColor("&7") + "Hiermee kan je een kit maken");
         sender.sendMessage(textColor("&e") + "/kit modify [name]" + textColor("&f") + " => "
                 + textColor("&7") + "Hiermee kan je de inventory van een kit aanpassen");
         sender.sendMessage(textColor("&e") + "/kit remove [name]" + textColor("&f")

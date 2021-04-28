@@ -42,7 +42,7 @@ public class KitCommands implements CommandExecutor {
             return true;
         }
 
-        if(args[0].equalsIgnoreCase("save")){
+        if(args[0].equalsIgnoreCase("create")){
             //Set variables
             ItemStack[] items = player.getInventory().getContents();
             String kitID = "kit_" + args[1];
