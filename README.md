@@ -3,7 +3,7 @@
 START MET DE PLUGIN
 - Let op dat je de config.yml instelt op jouw database.
 - spawn set lobby <- hiermee zet je een de spawn voor de lobby, hier spawnen spelers
-- /kit save [name]
+- /kit create [name]
 
 ---------------------------------------------------------------------------------------------------------------
 SPAWN COMMANDO'S
@@ -27,7 +27,7 @@ Het kit menu wordt gebruikt om een speler zijn kit te laten selecteren.
 /kit menu is alleen beschikbaar voor mensen die de kits kunnen configureren.
 Mits je speler een kit wil selecteren moet hij joinen of respawnen.
 
-- /kit save [name]
+- /kit create [name]
 Kit save wordt gebruikt om een kit toe te voegen, iedere kit heeft een naam, 
 standaard icon, description, slot, hoofdkleur en subkleur.
 De inventory van je kit wordt opgeslagen vanuit je eigen inventory.
