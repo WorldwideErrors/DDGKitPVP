@@ -1,0 +1,17 @@
+name: Kitpvp
+version: ${project.version}
+main: com.zhyrapian.kitpvp.Kitpvp
+api-version: 1.13
+authors: [Zhyrapian]
+description: Dit is een proefproject voor DDG
+
+#Commands
+commands:
+  spawn:
+    description: This commands are used for the DDG kitpvp
+    permission: kitpvp.spawn
+    permission-message: <permission> - you are lacking permission
+  kit:
+    description: This commands are used for the DDG kitpvp
+    permission: kitpvp.kitmanage
+    permission-message: <permission> - you are lacking permission

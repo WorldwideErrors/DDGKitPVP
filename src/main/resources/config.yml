@@ -1,0 +1,8 @@
+host: 'localhost'
+port: 27017
+dbname: 'ddgkitpvp'
+world: 'world'
+collections:
+  playerstats: 'playerstats'
+  kits: 'kits'
+  spawns: 'spawns'
