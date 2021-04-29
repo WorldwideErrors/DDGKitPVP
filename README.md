@@ -2,7 +2,7 @@
 
 START MET DE PLUGIN
 - Let op dat je de config.yml instelt op jouw database.
-- spawn set lobby <- hiermee zet je een de spawn voor de lobby, hier spawnen spelers
+- spawn set lobby <- hiermee zet je de spawn voor de lobby, hier spawnen spelers
 - /kit create [name]
 
 ---------------------------------------------------------------------------------------------------------------
